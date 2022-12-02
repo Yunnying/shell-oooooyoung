@@ -22,7 +22,7 @@ install_ziesha_bazuka_and_run() {
     cargo install --path .
     bazuka init --network groth-5 --bootstrap 65.108.193.133:8765
     echo -e "\n"
-    read -e -p "请保存上面创建好的钱包助记词私钥，然后输入你的discord帐号：" DISCORD_ACCOUNT
+    read -e -p " sdfsd " DISCORD_ACCOUNT
     bazuka node start --discord-handle "$DISCORD_ACCOUNT"
 }
 
@@ -35,14 +35,14 @@ update_ziesha_bazuka_and_run() {
     bazuka node start
 }
 
-echo && echo -e " ${Red_font_prefix}dusk_network 一键安装脚本${Font_color_suffix} by \033[1;35moooooyoung\033[0m
-此脚本完全免费开源, 由推特用户 ${Green_font_prefix}@ouyoung11开发${Font_color_suffix}, 
-欢迎关注, 如有收费请勿上当受骗。
+echo && echo -e " ${Red_font_prefix}dusk_network sdfsd ${Font_color_suffix} by \033[1;35moooooyoung\033[0m
+sdfsd ${Green_font_prefix}@ouyoung11sdfsd${Font_color_suffix}, 
+sdfssdfsdffs sdfsd
  ———————————————————————
- ${Green_font_prefix} 1.安装Ziesha节点且生成钱包并运行 ${Font_color_suffix}
- ${Green_font_prefix} 2.更新Ziesha节点版本并重新运行 ${Font_color_suffix}
+ ${Green_font_prefix} 1.sdfsdf ${Font_color_suffix}
+ ${Green_font_prefix} 2.sdfsd ${Font_color_suffix}
  ———————————————————————" && echo
-read -e -p " 请参照教程依次执行以上五个步骤，请输入数字 [1-5]:" num
+read -e -p " sdfsdf [1-5]:" num
 case "$num" in
 1)
     install_ziesha_bazuka_and_run
@@ -52,6 +52,6 @@ case "$num" in
     ;;
 *)
     echo
-    echo -e " ${Error} 请输入正确的数字"
+    echo -e " ${Error} sdfsd"
     ;;
 esac
