@@ -4,11 +4,11 @@ Red_font_prefix="\033[31m"
 Green_background_prefix="\033[42;37m"
 Red_background_prefix="\033[41;37m"
 Font_color_suffix="\033[0m"
-Info="[${Green_font_prefix}信息${Font_color_suffix}]"
-Error="[${Red_font_prefix}错误${Font_color_suffix}]"
-Tip="[${Green_font_prefix}注意${Font_color_suffix}]"
+Info="[${Green_font_prefix}INFO${Font_color_suffix}]"
+Error="[${Red_font_prefix}ERROR${Font_color_suffix}]"
+Tip="[${Green_font_prefix}WARN${Font_color_suffix}]"
 check_root() {
-    [[ $EUID != 0 ]] && echo -e "${Error} 当前非ROOT账号(或没有ROOT权限), 无法继续操作, 请更换ROOT账号或使用 ${Green_background_prefix}sudo su${Font_color_suffix} 命令获取临时ROOT权限（执行后可能会提示输入当前账号的密码）。" && exit 1
+    [[ $EUID != 0 ]] && echo -e "${Error} NOT ROOT, or NO ROOT Permission, no continue, change to root ${Green_background_prefix}sudo su${Font_color_suffix} " && exit 1
 }
 
 install_ziesha_bazuka_and_run() {
